@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <nav><h2 class="heading">Lets Play Tic Tac Toe</h2></nav>
+  <div id="grid-container">
+    <div class="grid-item" id="item0" data-value="0"></div>
+    <div class="grid-item" id="item1" data-value="1"></div>
+    <div class="grid-item" id="item2" data-value="2"></div>
+    <div class="grid-item" id="item3" data-value="3"></div>
+    <div class="grid-item" id="item4" data-value="4"></div>
+    <div class="grid-item" id="item5" data-value="5"></div>
+    <div class="grid-item" id="item6" data-value="6"></div>
+    <div class="grid-item" id="item7" data-value="7"></div>
+    <div class="grid-item" id="item8" data-value="8"></div>
+  </div>
+  <div class="hline" id="hdrawline" style="display:none;"></div>
+  <div class="vline" id="vdrawline" style="display:none;"></div>
+  <div class="vrline" id="vrdrawline" style="display:none;"></div>
+  <footer><p id="error-message"></p></footer>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
